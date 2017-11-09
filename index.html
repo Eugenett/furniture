@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/ss.css">
+	<script src="https://use.fontawesome.com/321bd387ea.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/vue.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/timer.js"></script>
+	<script src="js/script.js"></script>
+	<title>Home</title>
+</head>
+<body>
+<div class="page">
+	<div class="elems">
+		<ul class="elems__items">
+			<li class="elems__items-item-active_1">USD</li>
+				<ul class="elems__items-drop">
+					<li><a href="">UAH</a></li>
+					<li><a href="">EUR</a></li>
+					<li><a href="">USD</a></li>
+				</ul>
+			<li class="elems__items-item-active_2"><img src="img/default.png" alt="img">English</li>
+				<ul class="elems__items-lang">
+					<li><a href=""><img src="img/default.png" alt="img">English</a></li>
+					<li><a href=""><img src="img/Layer-19.png" alt="img">French</a></li>
+					<li><a href=""><img src="img/Layer-20.png" alt="img">German</a></li>
+					<li><a href=""><img src="img/Layer-21.png" alt="img">Argentina</a></li>
+					<li><a href=""><img src="img/Layer-22.png" alt="img">Bolivia</a></li>
+				</ul>
+			<li class="elems__items-item"><img src="img/Acc-icon.png" alt="img">My Account<img src="img/drop-down-icon.png" alt="img"></li>
+			<li class="elems__items-item"><img src="img/Heart-icon.png" alt="img">My Wishlist</li>
+			<li class="elems__items-item"><img src="img/Login-icon.png" alt="img">Login</li>
+		</ul>
+		<ul class="elems__commun">
+			<li class="elems__commun-item"><img src="img/Chat-icon.png" alt="img">Start <strong>LIVE CHAT</strong></li>
+			<li class="elems__commun-item"><img src="img/Call-icon.png" alt="img">Call our customer service at: <strong>096-999-8386</strong></li>
+		</ul>
+	</div>
+	<header class="header">
+		<div class="header__logo"></div>
+		<div class="header__search">
+			<input type="seacrh" placeholder="Enter your keyword..." class="header__search-input"><button class="header__search-submit">Search</button>
+		</div>
+		<div class="header__free-shipping"><img src="img/Every-day-free-shipping.png" alt="img"></div>
+		<div class="header__cart"><img src="img/Cart-icon.png" alt="img">
+			<div class="header__cart-dropdown">
+			</div>
+		</div>
+	</header>
+	<div class="navigation">
+		<nav class="navigation__nav">
+			<button class="navigation__nav-respmenu" @click="init=!init"><i class="fa fa-bars" aria-hidden="true"></i></button>
+			<div class="navigation__nav-item1"></div>
+			<div class="navigation__nav-item2">features</div>
+				<div class="navigation__nav-item2-dropdown">
+					
+					<ul>
+						<h3>LAYOUTS</h3>
+						<li><a href="">Hover menu item</a></li>
+						<li><a href="">Home Style 2</a></li>
+						<li><a href="">Home Style 3</a></li>
+						<li><a href="">Home Style 4</a></li>
+						<li><a href="">Home Style 5</a></li>
+						<li><a href="">Home Style 6</a></li>
+					</ul>
+					
+					<ul>
+						<h3>COLOR STYLES</h3>
+						<li><a href=""><img src="img/brown.png" alt="img">Brown</a></li>
+						<li><a href=""><img src="img/red.png" alt="img">Red</a></a></li>
+						<li><a href=""><img src="img/green.png" alt="img">Green</a></li>
+						<li><a href=""><img src="img/orange.png" alt="img">Orange</a></li>
+						<li><a href=""><img src="img/blue.png" alt="img">Blue</a></li>
+					</ul>
+
+					<ul>
+						<h3>HEADERS</h3>
+						<li><a href="">Header Style 1</a></li>
+						<li><a href="">Header Style 2</a></li>
+						<li><a href="">Header Style 3</a></li>
+						<li><a href="">Header Style 4</a></li>
+						<li><a href="">Header Style 5</a></li>
+						<li><a href="">Header Style 6</a></li>
+						<li><a href="">Header</a></li>
+					</ul>
+
+					<ul>
+						<h3>PRODUCT DETAIL LAYOUTS</h3>
+						<li><a href="">Product detail - Full</a></li>
+						<li><a href="">Product detail - Left Sidebar</a></li>
+						<li><a href="">Product detail - Right Sidebar</a></li>
+						<li><a href="">Thumbnail - Horizontal</a></li>
+						<li><a href="">Thumbnail - Vertical</a></li>
+					</ul>
+
+					<ul>
+						<h3>ZOOM TYPES</h3>
+						<li><a href="">Product Page Inner Zoom</a></li>
+						<li><a href="">Product Page Outer Zoom</a></li>
+						<li><a href="">Product Page Lens Zoom</a></li>
+					</ul>
+
+					<ul>
+						<h3>LISTING LAYOUTS</h3>
+						<li><a href="">Without Sidebar</a></li>
+						<li><a href="">Left Sidebar</a></li>
+						<li><a href="">Right Sidebar</a></li>
+						<li><a href="">Left Sidebar</a></li>
+					</ul>
+
+					<ul>
+						<h3>About Us Layouts</h3>
+						<li><a href="">About Us Style 1</a></li>
+						<li><a href="">About Us Style 2</a></li>
+						<li><a href="">About Us Style 3</a></li>
+						<li><a href="">About Us Style 4</a></li>
+					</ul>
+
+					<ul>
+						<h3>Contact Us Layouts</h3>
+						<li><a href="">Contact Us Style 1</a></li>
+						<li><a href="">Contact Us Style 2</a></li>
+						<li><a href="">Contact Us Style 3</a></li>
+						<li><a href="">Contact Us Style 4</a></li>
+					</ul>
+
+					<ul>
+						<h3>404 page layout</h3>
+						<li><a href="">Product Detail</a></li>
+						<li><a href="">Product Detail</a></li>
+						<li><a href="">Product Detail</a></li>
+					</ul>
+
+					<ul>
+						<h3>Effect hover product</h3>
+						<li><a href="">Simple</a></li>
+						<li><a href="">Display Second Image</a></li>
+						<li><a href="">Display Second Image</a></li>
+					</ul>
+
+				</div>
+			<div class="navigation__nav-item3">living room</div>
+				<div class="navigation__nav-item3-dropdown">
+					<ul>
+						<h3>Accessories</h3>
+						<li><a href="">Clocks</a></li>
+						<li><a href="">Decorative Shelving</a></li>
+						<li><a href="">Desktop</a></li>
+						<li><a href="">Dividers & Screens</a></li>
+						<li><a href="">Fireplace</a></li>
+						<li><a href="">Glassware & Ceramic</a></li>
+						<li><a href="">Mirrors</a></li>
+					</ul>
+
+					<ul>
+						<h3>Office furniture</h3>
+						<li><a href="">Bookcases</a></li>
+						<li><a href="">Other furniture</a></li>
+						<li><a href="">Chairs</a></li>
+						<li><a href="">Desks</a></li>
+						<li><a href="">Office lamps</a></li>
+						<li><a href="">Rocking chairs</a></li>
+						<li><a href="">Trunks</a></li>
+					</ul>
+
+					<ul>
+						<h3>bed & Bath</h3>
+						<li><a href="">Bathtime Goods</a></li>
+						<li><a href="">Bed & Bath Accessories</a></li>
+						<li><a href="">Bedding</a></li>
+						<li><a href="">Blankets</a></li>
+						<li><a href="">Shower Curtains</a></li>
+						<li><a href="">Step Stools</a></li>
+						<li><a href="">Towels & Rugs</a></li>
+					</ul>
+				</div>
+			<div class="navigation__nav-item4">bedrooms</div>
+				<div class="navigation__nav-item4-dropdown">
+					<div class="navigation__nav-item4-dropdown-div">
+						<ul>
+							<h3>Accessories</h3>
+							<li><a href="">Mattresses</a></li>
+							<li><a href="">Quilts & Coverlets</a></li>
+							<li><a href="">Mattress Pads</a></li>
+							<li><a href="">Dressers & Chests</a></li>
+							<li><a href="">Nightstands</a></li>
+							<li><a href="">Duvet Fills</a></li>
+							<li><a href="">Shower Heads</a></li>
+						</ul>
+					</div>
+					<div class="navigation__nav-item4-dropdown-img">
+					</div>
+				</div>
+			<div class="navigation__nav-item5">blog</div>
+			<div class="navigation__nav-item6">contact us</div>
+			<div class="navigation__nav-social"></div>
+		</nav>
+	</div>
+			<transition name="slide">
+				<nav id="nav-slide" v-show="init">
+					
+					<div class="features">features</div>
+						<div class="fatures_dropdown">
+							<ul>
+								<h3>LAYOUTS</h3>
+								<li><a href="">Hover menu item</a></li>
+								<li><a href="">Home Style 2</a></li>
+								<li><a href="">Home Style 3</a></li>
+								<li><a href="">Home Style 4</a></li>
+								<li><a href="">Home Style 5</a></li>
+								<li><a href="">Home Style 6</a></li>
+							</ul>
+					
+							<ul>
+								<h3>COLOR STYLES</h3>
+								<li><a href=""><img src="img/brown.png" alt="img">Brown</a></li>
+								<li><a href=""><img src="img/red.png" alt="img">Red</a></a></li>
+								<li><a href=""><img src="img/green.png" alt="img">Green</a></li>
+								<li><a href=""><img src="img/orange.png" alt="img">Orange</a></li>
+								<li><a href=""><img src="img/blue.png" alt="img">Blue</a></li>
+							</ul>
+
+							<ul>
+								<h3>HEADERS</h3>
+								<li><a href="">Header Style 1</a></li>
+								<li><a href="">Header Style 2</a></li>
+								<li><a href="">Header Style 3</a></li>
+								<li><a href="">Header Style 4</a></li>
+								<li><a href="">Header Style 5</a></li>
+								<li><a href="">Header Style 6</a></li>
+								<li><a href="">Header</a></li>
+							</ul>
+
+							<ul>
+								<h3>PRODUCT DETAIL LAYOUTS</h3>
+								<li><a href="">Product detail - Full</a></li>
+								<li><a href="">Product detail - Left Sidebar</a></li>
+								<li><a href="">Product detail - Right Sidebar</a></li>
+								<li><a href="">Thumbnail - Horizontal</a></li>
+								<li><a href="">Thumbnail - Vertical</a></li>
+							</ul>
+
+							<ul>
+								<h3>ZOOM TYPES</h3>
+								<li><a href="">Product Page Inner Zoom</a></li>
+								<li><a href="">Product Page Outer Zoom</a></li>
+								<li><a href="">Product Page Lens Zoom</a></li>
+							</ul>
+
+							<ul>
+								<h3>LISTING LAYOUTS</h3>
+								<li><a href="">Without Sidebar</a></li>
+								<li><a href="">Left Sidebar</a></li>
+								<li><a href="">Right Sidebar</a></li>
+								<li><a href="">Left Sidebar</a></li>
+							</ul>
+
+							<ul>
+								<h3>About Us Layouts</h3>
+								<li><a href="">About Us Style 1</a></li>
+								<li><a href="">About Us Style 2</a></li>
+								<li><a href="">About Us Style 3</a></li>
+								<li><a href="">About Us Style 4</a></li>
+							</ul>
+
+							<ul>
+								<h3>Contact Us Layouts</h3>
+								<li><a href="">Contact Us Style 1</a></li>
+								<li><a href="">Contact Us Style 2</a></li>
+								<li><a href="">Contact Us Style 3</a></li>
+								<li><a href="">Contact Us Style 4</a></li>
+							</ul>
+
+							<ul>
+								<h3>404 page layout</h3>
+								<li><a href="">Product Detail</a></li>
+								<li><a href="">Product Detail</a></li>
+								<li><a href="">Product Detail</a></li>
+							</ul>
+
+							<ul>
+								<h3>Effect hover product</h3>
+								<li><a href="">Simple</a></li>
+								<li><a href="">Display Second Image</a></li>
+								<li><a href="">Display Second Image</a></li>
+							</ul>
+
+						</div>
+
+					<div class="living-room">living room</div>
+						<div class="living-room-dropdown">
+							<ul>
+						<h3>Accessories</h3>
+						<li><a href="">Clocks</a></li>
+						<li><a href="">Decorative Shelving</a></li>
+						<li><a href="">Desktop</a></li>
+						<li><a href="">Dividers & Screens</a></li>
+						<li><a href="">Fireplace</a></li>
+						<li><a href="">Glassware & Ceramic</a></li>
+						<li><a href="">Mirrors</a></li>
+					</ul>
+
+					<ul>
+						<h3>Office furniture</h3>
+						<li><a href="">Bookcases</a></li>
+						<li><a href="">Other furniture</a></li>
+						<li><a href="">Chairs</a></li>
+						<li><a href="">Desks</a></li>
+						<li><a href="">Office lamps</a></li>
+						<li><a href="">Rocking chairs</a></li>
+						<li><a href="">Trunks</a></li>
+					</ul>
+
+					<ul>
+						<h3>bed & Bath</h3>
+						<li><a href="">Bathtime Goods</a></li>
+						<li><a href="">Bed & Bath Accessories</a></li>
+						<li><a href="">Bedding</a></li>
+						<li><a href="">Blankets</a></li>
+						<li><a href="">Shower Curtains</a></li>
+						<li><a href="">Step Stools</a></li>
+						<li><a href="">Towels & Rugs</a></li>
+					</ul>
+					</div>
+
+					<div class="bedrooms">bedrooms</div>
+						<div class="bedrooms-dropdown">	
+									<ul>
+										<h3>Accessories</h3>
+										<li><a href="">Mattresses</a></li>
+										<li><a href="">Quilts & Coverlets</a></li>
+										<li><a href="">Mattress Pads</a></li>
+										<li><a href="">Dressers & Chests</a></li>
+										<li><a href="">Nightstands</a></li>
+										<li><a href="">Duvet Fills</a></li>
+										<li><a href="">Shower Heads</a></li>
+									</ul>	
+						</div>
+					<div class="blog">blog</div>
+					<div class="contact">contact us</div>
+					<div class="cart">my cart</div>
+				</nav>
+			</transition>
+
+	<div class="slider">
+		<div class="owl-carousel slider1">
+			<div><img src="img/slide333.png" alt="img"></div>
+			<div><img src="img/slide222.png" alt="img"></div>
+			<div><img src="img/slide111.png" alt="img"></div>
+		</div>
+	</div>
+	<div class="wrapper__slider">
+		<div class="deals__section">
+		<div class="deals__section-deal">
+			<div class="deals__section-deal-header">
+				<strong>deals</strong> of the day
+			</div>
+			<div class="deals__section-deal-content">
+				<p>Mauris ut tincidunt nisi, id auctor libero. Etiam aliquet felis et consectetur faucibus. Praesent aliquam, lec tempus consequat,deserunt jowl prosciutto boudin.</p>
+			</div>
+			<div class="deals__section-deal-img">
+			</div>
+		</div>
+		<div class="deals__section-dashboard">
+			<div class="deals__section-dashboard-clock">
+				<div><span class="deals__section-dashboard-clock-time-days">595</span>days</div>
+				<div><span class="deals__section-dashboard-clock-time-hours">14</span>hours</div>
+				<div><span class="deals__section-dashboard-clock-time-mins">36</span>mins</div>
+				<div><span class="deals__section-dashboard-clock-time-secs">39</span>secs</div>
+			</div>
+			<div class="deals__section-dashboard-slcontainer">
+
+				<div class="slider-wrap">
+					<div class="mySlides fade"><img src="img/product-img.png" alt="img"></div>
+					<div class="mySlides fade"><img src="img/product-img.png" alt="img"></div>
+				</div>
+				<div class="bottom-side">
+						<div class="product-name">
+							<h3>AUZAN MIPANE</h3>
+							<p class="product-cost">
+								<img src="img/gray-stars.png" alt="img">
+							</p>
+						</div>
+						<a class="prev">&#10094</a>
+						<a class="next">&#10095</a>
+				</div>
+			</div>
+			<div class="deals__section-dashboard-popular">
+				<div class="deals__section-dashboard-popular-header"><strong>popular</strong> products</div>
+				<div class="deals__section-dashboard-popular-item-1"></div>
+				<div class="deals__section-dashboard-popular-item-2"></div>
+				<div class="deals__section-dashboard-popular-item-3"></div> 
+			</div>
+		</div>
+		</div>
+		<div class="deals__section-collection">
+			<div class="deals__section-collection-banner1">
+				<div class="deals__section-collection-banner1-text">
+					<h3><strong>SOFA</strong>COLLECTION</h3>
+					<p>LOWEST PRICES <strong>GUARANTEED</strong></p>
+				</div>
+			</div>
+			<div class="deals__section-collection-banner2">
+				<div class="deals__section-collection-banner2-text">
+					<h3><span class="deals__section-collection-banner2-text-clr"><strong>LIVING</strong></span>ROOM</h3>
+					<p>FURNITURE SALE</p>
+				</div>
+			</div>
+			<div class="deals__section-collection-banner3">
+				<div class="deals__section-collection-banner3-text">
+					<h3><span class="deals__section-collection-banner3-text-clr"><strong>NEW</strong></span>ARRIVALS</h3>
+					<p>Check out yhe latest arrivals</p>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper__slider-feature">
+			<div class="wrapper__slider-feature-descr">
+				<h1><span class="wrapper__slider-feature-descr-clr">FEATURED</span> PRODUCTS</h1>
+			</div>
+
+			<div class="owl-carousel slider2">
+				
+				<div class="image_wrap">
+					<div class="overflow">
+						<a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+					</div>
+					<img class="item" src="img/product_1.png" alt="img">
+					<div class="add_to_cart">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+
+				<div class="image_wrap">
+					<div class="overflow">
+						<a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+					</div>
+					<img class="item" src="img/product_2.png" alt="img">
+					<div class="add_to_cart">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+
+				<div class="image_wrap">
+					<div class="overflow">
+						<a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+					</div>
+					<img class="item" src="img/product_3.png" alt="img">
+					<div class="add_to_cart">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+
+				<div class="image_wrap">
+					<div class="overflow">
+						<a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+					</div>
+					<img class="item" src="img/Product_4.png" alt="img">
+					<div class="add_to_cart4">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+
+				<div class="image_wrap">
+					<div class="overflow">
+						<a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+					</div>
+					<img class="item" src="img/product_1.png" alt="img">
+					<div class="add_to_cart">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+
+				<div class="image_wrap">
+					<div class="overflow">
+						<a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+					</div>
+					<img class="item" src="img/product_2.png" alt="img">
+					<div class="add_to_cart">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+
+				<div class="image_wrap">
+					<div class="overflow">
+						<a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+					</div>
+					<img class="item" src="img/product_3.png" alt="img">
+					<div class="add_to_cart">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+
+				<div class="image_wrap">
+					<div class="overflow">
+						<a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+					</div>
+					<img class="item" src="img/Product_4.png" alt="img">
+					<div class="add_to_cart4">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>		
+			</div>
+		</div>
+		<div class="wrapper__slider-banner">
+			<div class="wrapper__slider-banner-if"></div>
+			<div class="wrapper__slider-banner-is"></div>
+			<div class="wrapper__slider-banner-it"></div>
+		</div>
+		<div class="wrapper__slider-bestsellers">
+			<div class="wrapper__slider-bestsellers-header">
+				<h1><span class="wrapper__slider-bestsellers-header-clr">best</span> sellers</h1>
+			</div>
+			<div class="owl-carousel slider3">
+				
+				<div class="image_wrap">
+					<img src="img/product_image1.png" alt="img">
+					<div class="add_to_cart">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+
+				<div class="image_wrap">
+					<img src="img/product_image2.png" alt="img">
+					<div class="add_to_cart">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+
+				<div class="image_wrap">
+					<img src="img/product_image3.png" alt="img">
+					<div class="add_to_cart">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+
+				<div class="image_wrap">
+					<img src="img/product_image4.png" alt="img">
+					<div class="add_to_cart">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+				<div class="image_wrap">
+					<img src="img/product_image1.png" alt="img">
+					<div class="add_to_cart">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+
+				<div class="image_wrap">
+					<img src="img/product_image2.png" alt="img">
+					<div class="add_to_cart">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+
+				<div class="image_wrap">
+					<img src="img/product_image3.png" alt="img">
+					<div class="add_to_cart">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+
+				<div class="image_wrap">
+					<img src="img/product_image4.png" alt="img">
+					<div class="add_to_cart">
+						<div class="add_img1"><img src="img/compare-icon.png" alt="img"></div>
+						<div class="add_item">add to cart</div>
+						<div class="add_img2"><img src="img/heart.png" alt="img"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	new Vue({
+		el: ".page",
+		data: {
+			init: false
+		},
+	})
+</script>
+</body>
+</html>
